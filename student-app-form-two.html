@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>MERP - Dashboard</title>
+
+    <!-- Bootstrap core CSS-->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <!-- Page level plugin CSS-->
+    <link href="css/datatables.min.css" rel="stylesheet">
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin.css" rel="stylesheet">
+      <link href="css/main.css" rel="stylesheet">
+  </head>
+  <body id="page-top">
+    <nav class="navbar navbar-expand bg-theme-color fixed-top  static-top">
+      <button class="btn btn-link btn-sm text-color-blue order-1 order-sm-0" id="sidebarToggle" href="#">
+        <i class="fas fa-bars"></i>
+      </button>
+      <a class="navbar-brand mr-1 text-color-blue" href="dashboard.html">MERP Application</a>
+      <!-- Navbar Search -->
+      <div class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
+        <span style="color:#fff">You are logged in.</span>
+      </div>
+
+      <!-- Navbar -->
+      <ul class="navbar-nav ml-auto ml-md-0">
+        <li class="nav-item dropdown no-arrow mx-1">
+          <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-bell fa-fw"></i>
+            <span class="badge badge-danger">9+</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="alertsDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown no-arrow mx-1">
+          <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-envelope fa-fw"></i>
+            <span class="badge badge-danger">7</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="messagesDropdown">
+            <a class="dropdown-item" href="">Action</a>
+            <a class="dropdown-item" href="forgot-password.html">Forget Password</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Log Out.html</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown no-arrow">
+          <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-user-circle fa-fw"></i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+            <a class="dropdown-item" href="forgot-password">Forgot Password</a>
+            <a class="dropdown-item" href="register.html">Create Account</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">Logout</a>
+          </div>
+        </li>
+      </ul>
+
+    </nav>
+
+    <div id="wrapper">
+
+      <!-- Sidebar -->
+      <ul class="sidebar navbar-nav">
+         
+         
+           
+          <div class="panel-group" id="accordion">
+              <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                          <a data-toggle="collapse" data-parent="#accordion" href="dashboard.html">
+                              <i class="fas fa-fw fa-tachometer-alt"></i>
+                              <span>Dashboard</span>
+                          </a>
+             
+                </h4>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                      <i class="fas fa-clipboard-list"></i>
+                      <span>  Applications</span>
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapse2" class="panel-collapse collapse">
+                    <ul class="nav nav-pills nav-stacked nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link" href="applicant-list.html">
+                               <i class="fas fa-table"></i>
+                               <span>Applicant List</span></a>
+                           </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="student-app-form-one.html">
+                               <i class="fab fa-wpforms"></i>
+                               <span>Application Step 1</span></a>
+                           </li>
+                           <li class="nav-item">
+                               <a class="nav-link" href="student-app-form-two.html">
+                                   <i class="fab fa-wpforms"></i>
+                                  <span>Application Step 2</span></a>
+                           </li>
+                           <li class="nav-item">
+                               <a class="nav-link" href="student-app-form-three.html">
+                                   <i class="fab fa-wpforms"></i>
+                                  <span>Application Step 3</span></a>
+                           </li>
+                           <li class="nav-item">
+                               <a class="nav-link" href="student-app-form-four.html">
+                                   <i class="fab fa-wpforms"></i>
+                                  <span>Application Step 4</span></a>
+                           </li>
+                          </ul>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                        <i class="fas fa-external-link-alt"></i>
+                     <span> Others</span>
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapse3" class="panel-collapse collapse">
+                 
+                      <ul class="nav nav-pills nav-stacked nav-tabs">
+                              <li class="nav-item">
+                              <a class="nav-link" href="popup-qa-add.html">
+                                 <i class="fas fa-fw fa-chart-area"></i>
+                                 <span>PopUp Add Modal</span></a>
+                             </li>
+                             <li class="nav-item">
+                              <a class="nav-link" href="404.html">
+                                 <i class="fas fa-fw fa-chart-area"></i>
+                                 <span>404 Page</span></a>
+                             </li></ul>
+                  
+                
+                </div>
+              </div>
+            </div> 
+        </ul>
+
+      <div id="content-wrapper">
+        <div class="container-fluid">        
+<div class="dashboad-main-content">
+  <div class="row">
+    <div class="col p-l-0">
+      	<h6 class="m-b-10">Student Application Form Step 2</h6>
+    </div>
+  </div>
+  <div class="row bg-white m-b-10 p-t-5"> 
+		      <div class="col">
+              <div class="form-group row">
+                  <label class="col-sm-4 col-form-label text-left">Applicant Id</label>
+                  <div class="col-sm-8">
+                      <div class="div-like-input-field text-left">
+                        : 1211356
+                      </div>
+                     
+                  </div>
+              </div>
+			  </div>
+			  <div class="col">
+                <div class="form-group row">
+                    <label class="col-sm-9 col-form-label text-right">Date</label>
+                    <div class="col-sm-3">
+                        <div class="div-like-input-field text-right">
+                          : 16.04.18
+                        </div>
+                       
+                    </div>
+                </div>
+              </div>
+  </div>
+  <div class="row">
+  
+    <div class="col bg-white m-r-5">
+    <div class="form-input-section">  
+ <h6 class="row text-left detail-title m-b-20">Present Address</h6>	
+         <div class="form-group row">
+                <label class="col-sm-4 col-form-label text-left">District</label>
+                <div class="col-sm-8">
+                  <select type="select" id="select" class="form-control">
+                    <option  >Select Option</option>
+                    <option  >Select Option 1</option>
+                    <option  >Select Option 2</option>
+                    <option  >Select Option 3</option>
+                  </select>
+                   
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-4 col-form-label text-left">Police Stattion</label>
+                <div class="col-sm-8">
+                  <select type="select" id="select" class="form-control">
+                    <option selected>Select Option</option>
+                    <option>Select Option 1</option>
+                    <option>Select Option 2</option>
+                    <option>Select Option 3</option>
+                  </select>
+                   
+                </div>
+            </div>
+        
+            <div class="form-group row">
+                <label class="col-sm-4 col-form-label text-left">Post Office</label>
+                <div class="col-sm-8">
+                  <select type="select" id="select" class="form-control">
+                    <option  >Select Option</option>
+                    <option  >Select Option 1</option>
+                    <option  >Select Option 2</option>
+                    <option  >Select Option 3</option>
+                  </select>
+                   
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-4 col-form-label text-left">Road/Block/Sector</label>
+                <div class="col-sm-8">
+                  <input type="text" id="road"  class="form-control">
+                   
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-4 col-form-label text-left">Village/House</label>
+                <div class="col-sm-8">
+                  <input type="text" id="road"  class="form-control">
+                   
+                </div>
+            </div>
+           
+         
+        
+          </div>
+		  </div>
+	<div class="col bg-ash m-l-5 p-b-10">
+	  <h6 class="row text-left detail-title m-b-20 ">Permanent Address</h6>
+    <div class="form-input-section">  
+                  <div class="form-group row">
+                    <div class="col">
+                        <input type="checkbox" class="text-left" id="exampleCheck1">
+                        <label class="col-form-label text-left">Same as present address</label>
+                    </div>
+                  </div>
+
+               <div class="form-group row">
+                      <label class="col-sm-4 col-form-label text-left">District</label>
+                      <div class="col-sm-8">
+                        <select type="select" id="select" class="form-control">
+                          <option  >Select Option</option>
+                          <option  >Select Option 1</option>
+                          <option  >Select Option 2</option>
+                          <option  >Select Option 3</option>
+                        </select>
+                         
+                      </div>
+                  </div>
+                  <div class="form-group row">
+                      <label class="col-sm-4 col-form-label text-left">Police Stattion</label>
+                      <div class="col-sm-8">
+                        <select type="select" id="select" class="form-control">
+                          <option selected>Select Option</option>
+                          <option>Select Option 1</option>
+                          <option>Select Option 2</option>
+                          <option>Select Option 3</option>
+                        </select>
+                         
+                      </div>
+                  </div>
+              
+                  <div class="form-group row">
+                      <label class="col-sm-4 col-form-label text-left">Post Office</label>
+                      <div class="col-sm-8">
+                        <select type="select" id="select" class="form-control">
+                          <option  >Select Option</option>
+                          <option  >Select Option 1</option>
+                          <option  >Select Option 2</option>
+                          <option  >Select Option 3</option>
+                        </select>
+                         
+                      </div>
+                  </div>
+                  <div class="form-group row">
+                      <label class="col-sm-4 col-form-label text-left">Road/Block/Sector</label>
+                      <div class="col-sm-8">
+                        <input type="text" id="road"  class="form-control">
+                         
+                      </div>
+                  </div>
+                  <div class="form-group row">
+                      <label class="col-sm-4 col-form-label text-left">Village/House</label>
+                      <div class="col-sm-8">
+                        <input type="text" id="road"  class="form-control">
+                         
+                      </div>
+                  </div>
+                </div>
+      </div>
+	
+	<div class="container m-t-10 m-b-10">
+	   <div class="row bg-white">
+	   
+       <div class="col-12">
+	    <h6 class="row text-left detail-title row text-left detail-title">Guardian Details</h6>
+	   </div>
+       <div class="col-sm bg-white">
+   <div class="form-group row">
+        <label class="col-sm-4 col-form-label text-left">Relationship</label>
+        <div class="col-sm-8">
+          <select type="select" id="select" class="form-control">
+            <option  >Select Option</option>
+            <option  >Select Option 1</option>
+            <option  >Select Option 2</option>
+            <option  >Select Option 3</option>
+          </select>
+           
+        </div>
+    </div>
+      <div class="form-group row">
+          <label class="col-sm-4 col-form-label text-left">Guardian Name</label>
+          <div class="col-sm-8">
+            <input type="text" id="name"  class="form-control" >
+             
+          </div>
+      </div>
+      <div class="form-group row">
+          <label class="col-sm-4 col-form-label text-left">Guardian Profession</label>
+          <div class="col-sm-8">
+            <select type="select" id="select" class="form-control">
+              <option  >Select Option</option>
+              <option  >Select Option 1</option>
+              <option  >Select Option 2</option>
+              <option  >Select Option 3</option>
+            </select>
+             
+          </div>
+      </div>
+      <div class="form-group row">
+          <label class="col-sm-4 col-form-label text-left">Country</label>
+          <div class="col-sm-8">
+            <select type="select" id="select" class="form-control">
+              <option  >Select Option</option>
+              <option  >Select Option 1</option>
+              <option  >Select Option 2</option>
+              <option  >Select Option 3</option>
+            </select>
+             
+          </div>
+      </div>
+      <div class="form-group row">
+          <label class="col-sm-4 col-form-label text-left">Email</label>
+          <div class="col-sm-8">
+            <input type="text" id="name"  class="form-control" placeholder="sumancsediu@gmail.com">
+             
+          </div>
+      </div>
+      <div class="form-group row">
+          <div class="col">
+              <input type="checkbox" class="text-left" id="exampleCheck1">
+              <label class="col-form-label text-left">Same as present address</label>
+          </div>
+        </div>
+		</div>
+		<div class="col-sm">
+        <div class="form-group row">
+            <div class="col">
+                <input type="checkbox" class="text-left" id="exampleCheck1">
+                <label class="col-form-label text-left">Same as parmanent address</label>
+            </div>
+          </div>
+          <div class="form-group row">
+              <label class="col-sm-4 col-form-label text-left">District</label>
+              <div class="col-sm-8">
+                <select type="select" id="select" class="form-control">
+                  <option  >Select Option</option>
+                  <option  >Select Option 1</option>
+                  <option  >Select Option 2</option>
+                  <option  >Select Option 3</option>
+                </select>
+                 
+              </div>
+          </div>
+          <div class="form-group row">
+              <label class="col-sm-4 col-form-label text-left">Police Stattion</label>
+              <div class="col-sm-8">
+                <select type="select" id="select" class="form-control">
+                  <option selected>Select Option</option>
+                  <option>Select Option 1</option>
+                  <option>Select Option 2</option>
+                  <option>Select Option 3</option>
+                </select>
+                 
+              </div>
+          </div>     
+          <div class="form-group row">
+              <label class="col-sm-4 col-form-label text-left">Post Office</label>
+              <div class="col-sm-8">
+                <select type="select" id="select" class="form-control">
+                  <option  >Select Option</option>
+                  <option  >Select Option 1</option>
+                  <option  >Select Option 2</option>
+                  <option  >Select Option 3</option>
+                </select>
+                 
+              </div>
+          </div>
+          <div class="form-group row">
+              <label class="col-sm-4 col-form-label text-left">Road/Block/Sector</label>
+              <div class="col-sm-8">
+                <input type="text" id="road"  class="form-control">
+                 
+              </div>
+          </div>
+          <div class="form-group row">
+              <label class="col-sm-4 col-form-label text-left">Village/House</label>
+              <div class="col-sm-8">
+                <input type="text" id="road"  class="form-control">
+                 
+              </div>
+          </div>         
+    </div>
+
+	   </div>
+	</div>
+    
+
+
+</div>
+    <div class="row">
+	<div class="col">  
+          <div class="float-right">
+            <div class="form-group row">
+              <div class="button-group">
+             <button class="btn btn-previous-color action m-r-5 w-150"><i class="fas fa-chevron-left"></i>
+       Previous Stage</button>
+             <button class="btn btn-save-next--color action w-150">Save and Next <i class="fas fa-chevron-right"></i></button>
+           </div>
+           </div>
+          </div> 
+      </div>
+</div>
+</div>
+
+        </div>
+        <!-- /.container-fluid -->
+
+        <!-- Sticky Footer -->
+        <footer class="sticky-footer">
+          <div class="container my-auto">
+            <div class="copyright text-center my-auto">
+              <span>Copyright © MERP Application 2018</span>
+            </div>
+          </div>
+        </footer>
+
+      </div>
+      <!-- /.content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+            <a class="btn btn-primary" href="login.html">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/datatables.min.js"></script>
+    <script src="js/sb-admin.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+
+</html>

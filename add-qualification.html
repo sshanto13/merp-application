@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>MERP - Dashboard</title>
+
+    <!-- Bootstrap core CSS-->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Page level plugin CSS-->
+    <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+    <link href="css/datatables.min.css" rel="stylesheet">
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin.css" rel="stylesheet">
+      <link href="css/main.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <nav class="navbar navbar-expand bg-theme-color fixed-top  static-top">
+      <button class="btn btn-link btn-sm text-color-blue order-1 order-sm-0" id="sidebarToggle" href="#">
+        <i class="fas fa-bars"></i>
+      </button>
+      <a class="navbar-brand mr-1 text-color-blue" href="dashboard.html">MERP Application</a>
+
+      
+
+      <!-- Navbar Search -->
+      <div class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
+        <span style="color:#fff">You are logged in.</span>
+      </div>
+
+      <!-- Navbar -->
+      <ul class="navbar-nav ml-auto ml-md-0">
+        <li class="nav-item dropdown no-arrow mx-1">
+          <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-bell fa-fw"></i>
+            <span class="badge badge-danger">9+</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="alertsDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown no-arrow mx-1">
+          <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-envelope fa-fw"></i>
+            <span class="badge badge-danger">7</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="messagesDropdown">
+            <a class="dropdown-item" href="">Action</a>
+            <a class="dropdown-item" href="forgot-password.html">Forget Password</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Log Out.html</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown no-arrow">
+          <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-user-circle fa-fw"></i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+            <a class="dropdown-item" href="forgot-password">Forgot Password</a>
+            <a class="dropdown-item" href="register.html">Create Account</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">Logout</a>
+          </div>
+        </li>
+      </ul>
+
+    </nav>
+
+    <div id="wrapper">  
+      <!-- Sidebar -->
+      <ul class="sidebar navbar-nav">
+         
+         
+           
+          <div class="panel-group" id="accordion">
+              <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                          <a data-toggle="collapse" data-parent="#accordion" href="dashboard.html">
+                              <i class="fas fa-fw fa-tachometer-alt"></i>
+                              <span>Dashboard</span>
+                          </a>
+             
+                </h4>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                      <i class="fas fa-clipboard-list"></i>
+                      <span>  Applications</span>
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapse2" class="panel-collapse collapse">
+                    <ul class="nav nav-pills nav-stacked nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link" href="applicant-list.html">
+                               <i class="fas fa-table"></i>
+                               <span>Applicant List</span></a>
+                           </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="student-app-form-one.html">
+                               <i class="fab fa-wpforms"></i>
+                               <span>Application Step 1</span></a>
+                           </li>
+                           <li class="nav-item">
+                               <a class="nav-link" href="student-app-form-two.html">
+                                   <i class="fab fa-wpforms"></i>
+                                  <span>Application Step 2</span></a>
+                           </li>
+                           <li class="nav-item">
+                               <a class="nav-link" href="student-app-form-three.html">
+                                   <i class="fab fa-wpforms"></i>
+                                  <span>Application Step 3</span></a>
+                           </li>
+                           <li class="nav-item">
+                               <a class="nav-link" href="student-app-form-four.html">
+                                   <i class="fab fa-wpforms"></i>
+                                  <span>Application Step 4</span></a>
+                           </li>
+                          </ul>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                        <i class="fas fa-external-link-alt"></i>
+                     <span> Others</span>
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapse3" class="panel-collapse collapse">
+                 
+                      <ul class="nav nav-pills nav-stacked nav-tabs">
+                              <li class="nav-item">
+                              <a class="nav-link" href="popup-qa-add.html">
+                                 <i class="fas fa-fw fa-chart-area"></i>
+                                 <span>PopUp Add Modal</span></a>
+                             </li>
+                             <li class="nav-item">
+                              <a class="nav-link" href="404.html">
+                                 <i class="fas fa-fw fa-chart-area"></i>
+                                 <span>404 Page</span></a>
+                             </li></ul>
+                  
+                
+                </div>
+              </div>
+            </div> 
+        </ul>
+
+      <div id="content-wrapper">
+
+
+ <div class="container-fluid">
+
+<div class="card mb-3">
+            <div class="card-header">
+              <i class="fas fa-table"></i>
+              List of Applicant</div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <div id="dataTable_wrapper" class="dataTables_wrapper dt-bootstrap4">
+                  <div class="row mb-3 applicant-table-header">
+                    <div class="col-sm-12 col-md-6">
+                      <button class="btn btn-lg btn-succes action"><i class="fa fa-plus"></i> Add Applicant</button>
+                   </div>
+
+                     <div class="col-sm-12 col-md-6">
+                      <div id="dataTable_filter" class="dataTables_filter"><label>Search:<input type="search" class="form-control form-control-sm" placeholder="" aria-controls="dataTable"></label></div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12 col-md-12">
+                      <div class="dataTables_length" id="dataTable_length">
+                     <label>Show <select name="dataTable_length" aria-controls="dataTable" class="custom-select custom-select-sm form-control form-control-sm"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label></div>
+                   </div>
+                  </div>
+
+
+                      <div class="row"><div class="col-sm-12">
+                        <table class="table table-bordered dataTable" id="dataTable" width="100%" cellspacing="0" role="grid" aria-describedby="dataTable_info" style="width: 100%; min-height: 200px; height: 200px">
+                  <thead>
+                   <tr>
+                      <th rowspan="1" colspan="1">Enrolment Id</th>
+                      <th rowspan="1" colspan="1">Name</th>
+                      <th rowspan="1" colspan="1">Father's Name</th>
+                      <th rowspan="1" colspan="1">Mobile No.</th>
+                      <th rowspan="1" colspan="1">Applied Class</th>
+                      <th rowspan="1" colspan="1">Stutus</th>
+                      <th rowspan="1" colspan="1">Action</th>
+                    </tr>
+                  </
+                  </thead>
+  
+                  <tbody>
+                    
+                    <tr role="row" class="odd">
+                      <td class="text-center">00018456</td>
+                      <td class="text-left">Md Arif Hossain</td>
+                      <td class="text-left">Anwar Hossain</td>
+                      <td class="text-center">01744245716</td>
+                      <td class="text-center">Class 9</td>
+                      <td class="text-center">Draft</td>
+                      <td class="text-center"><button class="btn btn-sm btn-primary">OPEN</button></td>
+                    </tr>
+
+                    <tr role="row" class="even">
+                      <td class="text-center">00018456</td>
+                      <td class="text-left">Md Arif Hossain</td>
+                      <td class="text-left">Anwar Hossain</td>
+                      <td class="text-center">01744245716</td>
+                      <td class="text-center">Class 9</td>
+                      <td class="text-center">Saved</td>
+                      <td class="text-center"><button class="btn btn-sm btn-primary">OPEN</button></td>
+                    </tr>
+
+                    <tr role="row" class="odd">
+                      <td class="text-center">00018456</td>
+                      <td class="text-left">Md Arif Hossain</td>
+                      <td class="text-left">Anwar Hossain</td>
+                      <td class="text-center">01744245716</td>
+                      <td class="text-center">Class 9</td>
+                      <td class="text-center">Submited</td>
+                      <td class="text-center"><button class="btn btn-sm btn-primary">OPEN</button></td>
+                    </tr>
+                  </tbody>
+                </table></div></div>
+                <div class="row">
+                  <div class="col-sm-12 col-md-5">
+                    <div class="dataTables_info" id="dataTable_info" role="status" aria-live="polite">Showing 1 to 10 of 57 entries
+                    </div></div>
+
+                    <div class="col-sm-12 col-md-7">
+                      <div class="dataTables_paginate paging_simple_numbers" id="dataTable_paginate"><ul class="pagination">
+                        <li class="paginate_button page-item previous disabled" id="dataTable_previous">
+                          <a href="#" aria-controls="dataTable" data-dt-idx="0" tabindex="0" class="page-link">Previous</a>
+                        </li>
+                        <li class="paginate_button page-item active">
+                          <a href="#" aria-controls="dataTable" data-dt-idx="1" tabindex="0" class="page-link">1</a>
+                        </li>
+                        <li class="paginate_button page-item ">
+                          <a href="#" aria-controls="dataTable" data-dt-idx="2" tabindex="0" class="page-link">2</a>
+                        </li>
+                        <li class="paginate_button page-item ">
+                          <a href="#" aria-controls="dataTable" data-dt-idx="3" tabindex="0" class="page-link">3</a>
+                        </li>
+                        <li class="paginate_button page-item ">
+                          <a href="#" aria-controls="dataTable" data-dt-idx="4" tabindex="0" class="page-link">4</a></li>
+                        <li class="paginate_button page-item ">
+                          <a href="#" aria-controls="dataTable" data-dt-idx="5" tabindex="0" class="page-link">5</a>
+                        </li>
+                        <li class="paginate_button page-item ">
+                          <a href="#" aria-controls="dataTable" data-dt-idx="6" tabindex="0" class="page-link">6</a>
+                        </li>
+                        <li class="paginate_button page-item next" id="dataTable_next"><a href="#" aria-controls="dataTable" data-dt-idx="7" tabindex="0" class="page-link">Next</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+            <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+          </div>
+
+        <!-- /.container-fluid -->
+
+        <!-- Sticky Footer -->
+        <footer class="sticky-footer">
+          <div class="container my-auto">
+            <div class="copyright text-center my-auto">
+              <span>Copyright © MERP Application 2018</span>
+            </div>
+          </div>
+        </footer>
+
+      </div>
+      <!-- /.content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+            <a class="btn btn-primary" href="login.html">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/datatables.min.js"></script>
+    <script src="js/sb-admin.min.js"></script>
+    <script src="js/app.js"></script>
+
+
+
+  </body>
+
+</html>

@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>MERP - Dashboard</title>
+
+    <!-- Bootstrap core CSS-->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <!-- Page level plugin CSS-->
+    <link href="css/datatables.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin.css" rel="stylesheet">
+      <link href="css/main.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <nav class="navbar navbar-expand bg-theme-color fixed-top static-top">
+      <button class="btn btn-link btn-sm text-color-blue order-1 order-sm-0" id="sidebarToggle" href="#">
+        <i class="fas fa-bars"></i>
+      </button>
+      <a class="navbar-brand mr-1 text-color-blue" href="dashboard.html">MERP Application</a>
+
+      
+
+      <!-- Navbar Search -->
+      <div class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
+        <span style="color:#fff">You are logged in.</span>
+      </div>
+
+      <!-- Navbar -->
+      <ul class="navbar-nav ml-auto ml-md-0">
+        <li class="nav-item dropdown no-arrow mx-1">
+          <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-bell fa-fw"></i>
+            <span class="badge badge-danger">9+</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="alertsDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown no-arrow mx-1">
+          <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-envelope fa-fw"></i>
+            <span class="badge badge-danger">7</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="messagesDropdown">
+            <a class="dropdown-item" href="">Action</a>
+            <a class="dropdown-item" href="forgot-password.html">Forget Password</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Log Out.html</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown no-arrow">
+          <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-user-circle fa-fw"></i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+            <a class="dropdown-item" href="forgot-password">Forgot Password</a>
+            <a class="dropdown-item" href="register.html">Create Account</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">Logout</a>
+          </div>
+        </li>
+      </ul>
+
+    </nav>
+
+    <div id="wrapper">
+
+      <!-- Sidebar -->
+      <ul class="sidebar navbar-nav">
+         
+         
+           
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="dashboard.html">
+                                <i class="fas fa-fw fa-tachometer-alt"></i>
+                                <span>Dashboard</span>
+                            </a>
+               
+                  </h4>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                        <i class="fas fa-clipboard-list"></i>
+                        <span>  Applications</span>
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapse2" class="panel-collapse collapse">
+                      <ul class="nav nav-pills nav-stacked nav-tabs">
+                          <li class="nav-item">
+                              <a class="nav-link" href="applicant-list.html">
+                                 <i class="fas fa-table"></i>
+                                 <span>Applicant List</span></a>
+                             </li>
+                              <li class="nav-item">
+                              <a class="nav-link" href="student-app-form-one.html">
+                                 <i class="fab fa-wpforms"></i>
+                                 <span>Application Step 1</span></a>
+                             </li>
+                             <li class="nav-item">
+                                 <a class="nav-link" href="student-app-form-two.html">
+                                     <i class="fab fa-wpforms"></i>
+                                    <span>Application Step 2</span></a>
+                             </li>
+                             <li class="nav-item">
+                                 <a class="nav-link" href="student-app-form-three.html">
+                                     <i class="fab fa-wpforms"></i>
+                                    <span>Application Step 3</span></a>
+                             </li>
+                             <li class="nav-item">
+                                 <a class="nav-link" href="student-app-form-four.html">
+                                     <i class="fab fa-wpforms"></i>
+                                    <span>Application Step 4</span></a>
+                             </li>
+                            </ul>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                          <i class="fas fa-external-link-alt"></i>
+                       <span> Others</span>
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapse3" class="panel-collapse collapse">
+                   
+                        <ul class="nav nav-pills nav-stacked nav-tabs">
+                                <li class="nav-item">
+                                <a class="nav-link" href="popup-qa-add.html">
+                                   <i class="fas fa-fw fa-chart-area"></i>
+                                   <span>PopUp Add Modal</span></a>
+                               </li>
+                               <li class="nav-item">
+                                <a class="nav-link" href="404.html">
+                                   <i class="fas fa-fw fa-chart-area"></i>
+                                   <span>404 Page</span></a>
+                               </li></ul>
+                    
+                  
+                  </div>
+                </div>
+              </div> 
+          </ul>
+      <div id="content-wrapper">
+        <div class="container-fluid">
+<div class="dashboad-main-content">
+<div class="row border-control">
+
+  <div class="col-12 bg-green-type p-b-10">
+      <h5 class="detail-main-title">Arif Hossain</h5>
+    <div class="row">
+    <div class="col">
+       <div class="div-like-input-field">
+            
+                     </div>
+                     <div class="div-like-input-field">
+                        Applicant ID : 123331214
+                      </div>
+    </div>
+    <div  class="col-9">
+       <div class="form-input-section text-right">
+          <img src="img/user.png" class="text-right">
+         
+        </div>
+    </div>
+     
+       </div>
+  </div>
+
+  <div class="col-12 m-t-10">
+     <h6 class="row text-left detail-title m-b-minus-2">Expected Class, Cumpus, Shift, Group, Subject</h6>
+    <div class="row form-input-section m-b-20">
+      <div class="col-6 border-control bg-white">
+            <div class="form-group row">
+                <label class="col-sm-5 col-form-label text-left">Applied Campus for</label>
+                <div class="col-sm-7">
+                    <div class="div-like-input-field text-left">
+                     : Dhaka Campus
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-5 col-form-label text-left">Applied Class for</label>
+                <div class="col-sm-7">
+                    <div class="div-like-input-field text-left">
+                      : Class 8
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-5 col-form-label text-left">Applied Subject for</label>
+                <div class="col-sm-7">
+                    <div class="div-like-input-field text-left">
+                      : Finance
+                    </div>
+                   
+                </div>
+            </div>
+            
+          
+      
+      </div>
+      <div class="col-6 border-control bg-ash">
+             <div class="form-group row">
+                <label class="col-sm-5 col-form-label text-left">Applied Group for</label>
+                <div class="col-sm-7">
+                    <div class="div-like-input-field text-left">
+                      : Commerce
+                    </div>
+                   
+                </div>
+            </div>
+             <div class="form-group row">
+                <label class="col-sm-5 col-form-label text-left">Applied Section/Shift for</label>
+                <div class="col-sm-7">
+                    <div class="div-like-input-field text-left">
+                      : Shift Cz
+                    </div>
+                   
+                </div>
+            </div>
+      </div>
+
+      </div>
+      <h6 class="row text-left detail-title m-b-minus-2">Personal Information</h6>
+      <div class="row form-input-section bg-green-type m-b-20">
+      <div class="col-6 border-control">
+             <div class="form-group row">
+                <label class="col-sm-5 col-form-label text-left">Name of Applicant</label>
+                <div class="col-sm-7">
+                    <div class="div-like-input-field text-left">
+                     : Arif Hossain
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-5 col-form-label text-left">First Part(Given Name)</label>
+                <div class="col-sm-7">
+                    <div class="div-like-input-field text-left">
+                     : Arif 
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-5 col-form-label text-left">Second Part(Given)</label>
+                <div class="col-sm-7">
+                    <div class="div-like-input-field text-left">
+                        : Hossain
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-5 col-form-label text-left">Mobile Number</label>
+                <div class="col-sm-7">
+                    <div class="div-like-input-field text-left">
+                      : 01952499680
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-5 col-form-label text-left">Email</label>
+                <div class="col-sm-7">
+                    <div class="div-like-input-field text-left">
+                     : sumancsediu@gmail.com
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-5 col-form-label text-left">Father's Name</label>
+                <div class="col-sm-7">
+                    <div class="div-like-input-field text-left">
+                      : Hemendra Nath Ray
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-5 col-form-label text-left">Father's Profession</label>
+                <div class="col-sm-7">
+                    <div class="div-like-input-field text-left">
+                      : retired
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-5 col-form-label text-left">Father's Mobile No.</label>
+                <div class="col-sm-7">
+                    <div class="div-like-input-field text-left">
+                      : 01952499680
+                    </div>
+                   
+                </div>
+            </div>
+              <div class="form-group row">
+                <label class="col-sm-5 col-form-label text-left">Father's Email ID</label>
+                <div class="col-sm-7">
+                    <div class="div-like-input-field text-left">
+                      : sumancsediu@gmail.com
+                    </div>
+                   
+                </div>
+            </div>
+            
+           
+    
+      </div>
+       <div class="col-6 border-control bg-ash">
+         
+              <div class="form-group row">
+                <label class="col-sm-5 col-form-label text-left">Mother's Name</label>
+                <div class="col-sm-7">
+                    <div class="div-like-input-field text-left">
+                      : Biroja Rani Ray
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-5 col-form-label text-left">Mothers Profession
+                  </label>
+                <div class="col-sm-7">
+                    <div class="div-like-input-field text-left">
+                    : 
+                    </div>
+                   
+                </div>
+            </div>
+           <div class="form-group row">
+                <label class="col-sm-5 col-form-label text-left">Mothers's Mobile No.</label>
+                <div class="col-sm-7">
+                    <div class="div-like-input-field text-left">
+                    : 
+                    </div>
+                   
+                </div>
+            </div>
+        
+            <div class="form-group row">
+                <label class="col-sm-5 col-form-label text-left">Mothers's Email Id</label>
+                <div class="col-sm-7">
+                    <div class="div-like-input-field text-left">
+                   : sumancesdiu@gmail.com
+                </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-5 col-form-label text-left">Monthly Income</label>
+                <div class="col-sm-7">
+                    <div class="div-like-input-field text-left">
+                   : 50,000
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-5 col-form-label text-left">Nationality</label>
+                <div class="col-sm-7">
+                    <div class="div-like-input-field text-left">
+                     : 
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-5 col-form-label text-left">Citizenship Status</label>
+                <div class="col-sm-7">
+                    <div class="div-like-input-field text-left">
+                    : 
+                    </div>
+                   
+                </div>
+            </div>
+              <div class="form-group row">
+                <label class="col-sm-5 col-form-label text-left">Birth Reg. No.</label>
+                <div class="col-sm-7">
+                    <div class="div-like-input-field text-left">
+                     : 
+                    </div>
+                   
+                </div>
+            </div>
+ 
+      </div>
+             <div class="col-6 border-control">
+     
+          <div class="form-group row">
+                <label class="col-sm-5 col-form-label text-left">Country of Birth</label>
+                <div class="col-sm-7">
+                    <div class="div-like-input-field text-left">
+                     : 
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-5 col-form-label text-left">Birth District</label>
+                <div class="col-sm-7">
+                    <div class="div-like-input-field text-left">
+                      : 
+                    </div>
+                   
+                </div>
+            </div>
+          
+            <div class="form-group row">
+                <label class="col-sm-5 col-form-label text-left">Date of Birhht(Age)</label>
+                <div class="col-sm-7">
+                    <div class="div-like-input-field text-left">
+                    : 
+                    </div>
+                   
+                </div>
+            </div>
+             <div class="form-group row">
+                <label class="col-sm-5 col-form-label text-left">Gender</label>
+                <div class="col-sm-7">
+                    <div class="div-like-input-field text-left">
+                     : Male
+                    </div>
+                   
+                </div>
+            </div>
+              <div class="form-group row">
+                <label class="col-sm-5 col-form-label text-left">Blood Group</label>
+                <div class="col-sm-7">
+                    <div class="div-like-input-field text-left">
+                    : AB+
+                    </div>
+                   
+                </div>
+            </div>
+          
+    
+      </div>
+
+        <div class="col-6 border-control bg-ash">
+        
+                    <div class="form-group row">
+                <label class="col-sm-5 col-form-label text-left">Height</label>
+                <div class="col-sm-7">
+                    <div class="div-like-input-field text-left">
+                     : 5ft 5inc.
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-5 col-form-label text-left">Religion</label>
+                <div class="col-sm-7">
+                    <div class="div-like-input-field text-left">
+                     : Hindu
+                    </div>
+                   
+                </div>
+            </div>  
+             <div class="form-group row">
+                <label class="col-sm-5 col-form-label text-left">National Id No.</label>
+                <div class="col-sm-7">
+                    <div class="div-like-input-field text-left">
+                     :
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-5 col-form-label text-left">Password No.</label>
+                <div class="col-sm-7">
+                    <div class="div-like-input-field text-left">
+                     :
+                    </div>
+                   
+                </div>
+            </div>
+          
+   
+    </div>
+    </div>
+<h6 class="row text-left detail-title m-b-minus-2">Present address</h6>
+    <div class="row form-input-section m-b-20 ">
+      <div class="col-6 border-control bg-white">
+            <div class="form-group row">
+                <label class="col-sm-5 col-form-label text-left">District</label>
+                <div class="col-sm-7">
+                    <div class="div-like-input-field text-left">
+                     : Dhaka 
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-5 col-form-label text-left">Police Stattion</label>
+                <div class="col-sm-7">
+                    <div class="div-like-input-field text-left">
+                   : 
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-5 col-form-label text-left">Post Office</label>
+                <div class="col-sm-7">
+                    <div class="div-like-input-field text-left">
+                     : Finance
+                    </div>
+                   
+                </div>
+            </div>
+          </div>
+          <div class="col-6 border-control bg-ash">
+            <div class="form-group row">
+                <label class="col-sm-5 col-form-label text-left">Road/Block/Sector</label>
+                <div class="col-sm-7">
+                    <div class="div-like-input-field text-left">
+                      : Commerce
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-5 col-form-label text-left">Village/House</label>
+                <div class="col-sm-7">
+                    <div class="div-like-input-field text-left">
+                     :
+                    </div>
+                   
+                </div>
+            </div>
+  
+      </div>
+      
+     
+    </div>
+     
+      <h6 class="row text-left detail-title m-b-minus-2">Parmanent address</h6>
+        
+       <div class="row form-input-section m-b-20">
+         <div class="col-6 border-control bg-white">
+            <div class="form-group row">
+                <label class="col-sm-5 col-form-label text-left">District</label>
+                <div class="col-sm-7">
+                    <div class="div-like-input-field text-left">
+                    : Dhaka 
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-5 col-form-label text-left">Police Stattion</label>
+                <div class="col-sm-7">
+                    <div class="div-like-input-field text-left">
+                   : 
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-5 col-form-label text-left">Post Office</label>
+                <div class="col-sm-7">
+                    <div class="div-like-input-field text-left">
+                    : Finance
+                    </div>
+                   
+                </div>
+            </div>
+            </div>
+            <div class="col-6 border-control bg-ash">
+            <div class="form-group row">
+                <label class="col-sm-5 col-form-label text-left">Road/Block/Sector</label>
+                <div class="col-sm-7">
+                    <div class="div-like-input-field text-left">
+                      : Commerce
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-5 col-form-label text-left">Village/House</label>
+                <div class="col-sm-7">
+                    <div class="div-like-input-field text-left">
+                     : 
+                    </div>
+                   
+                </div>
+            </div>
+      
+      </div>
+       </div>
+       
+        <h6 class="row text-left detail-title m-b-minus-2">Gurdian Details</h6>
+        <div class="row form-input-section m-b-20">
+            <div class="col-6 border-control bg-white"> 
+            
+            <div class="form-group row">
+                <label class="col-sm-5 col-form-label text-left">Relationship</label>
+                <div class="col-sm-7">
+                    <div class="div-like-input-field text-left">
+                     : 
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-5 col-form-label text-left">Guardian Name</label>
+                <div class="col-sm-7">
+                    <div class="div-like-input-field text-left">
+                    : 
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-5 col-form-label text-left">Guardian Profession</label>
+                <div class="col-sm-7">
+                    <div class="div-like-input-field text-left">
+                    : 
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-5 col-form-label text-left">Country</label>
+                <div class="col-sm-7">
+                    <div class="div-like-input-field text-left">
+                    : 
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-5 col-form-label text-left">Email</label>
+                <div class="col-sm-7">
+                    <div class="div-like-input-field text-left">
+                    :
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-5 col-form-label text-left">Same as Present Adress</label>
+                <div class="col-sm-7">
+                    <div class="div-like-input-field text-left">
+                    : 
+                    </div>
+                   
+                </div>
+            </div>
+            </div>
+            <div class="col-6 border-control bg-ash">
+            <div class="form-group row">
+                <label class="col-sm-5 col-form-label text-left">Same as Parmanent Adress</label>
+                <div class="col-sm-7">
+                    <div class="div-like-input-field text-left">
+                    :
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-5 col-form-label text-left">District</label>
+                <div class="col-sm-7">
+                    <div class="div-like-input-field text-left">
+                     : 
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-5 col-form-label text-left">Police station</label>
+                <div class="col-sm-7">
+                    <div class="div-like-input-field text-left">
+                     :
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-5 col-form-label text-left">Post Office</label>
+                <div class="col-sm-7">
+                    <div class="div-like-input-field text-left">
+                      :
+                    </div>
+                   
+                </div>
+            </div>
+                 <div class="form-group row">
+                <label class="col-sm-5 col-form-label text-left">Road/Sector/Block</label>
+                <div class="col-sm-7">
+                    <div class="div-like-input-field text-left">
+                      : 
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-5 col-form-label text-left">Village/House</label>
+                <div class="col-sm-7">
+                    <div class="div-like-input-field text-left">
+                      : Shift Cz
+                    </div>
+                   
+                </div>
+            </div>
+          </div>
+        
+        </div>
+  
+        <div class="form-input-section paragraph-font">
+                <div class="row text-left detail-title well m-b-minus-2">Attachment Files</div>
+            <div class="row  bg-white p-t-10">
+                <div class="col-6">
+                    <div class="row">
+                        <div class="col-5">
+                         <p>Attachment 01</p>
+                        </div>
+                        <div class="col-7">
+                           <img src="img/f01.jpg">
+                           <input type="file" class="m-t-5">
+                           <p>[File Fromat *jpg/png] Diemention 840*1200px, File Size =150kb </p>
+                          </div>
+                     </div> 
+                </div>
+                <div class="col-6 bg-ash">
+                    <div class="row">
+                        <div class="col-5">
+                         <p>Attachment 02</p>
+                        </div>
+                        <div class="col-7">
+                           <img src="img/f02.jpg">
+                           <input type="file" class="m-t-5">
+                           <p>[File Fromat *jpg/png] Diemention 840*1200px, File Size =150kb </p>
+                          </div>
+                     </div> 
+                  </div>
+        </div> 
+        <div class="row">
+            <div class="col-6 bg-white">
+                <div class="row">
+                    <div class="col-5">
+                     <p>Attachment 03</p>
+                    </div>
+                    <div class="col-7">
+                       <img src="img/03.jpg">
+                       <input type="file" class="m-t-5">
+                       <p>[File Fromat *jpg/png] Diemention 840*1200px, File Size =150kb </p>
+                      </div>
+                 </div> 
+            </div>
+            <div class="col-6 bg-ash">
+                <div class="row">
+                    <div class="col-5">
+                     <p>Attachment 04</p>
+                    </div>
+                    <div class="col-7">
+                       <img src="img/04.jpg">
+                       <input type="file" class="m-t-5">
+                       <p>[File Fromat *jpg/png] Diemention 840*1200px, File Size =150kb </p>
+                      </div>
+                 </div> 
+              </div>
+           </div> 
+        </div>
+        <div class="form-group row">
+        
+            <div class="col p-l-r-0">
+              <div class="float-right m-b-20 m-t-5">
+                <div class="button-group">
+               <button class="btn btn-previous-color action m-r-5 "><i class="fas fa-chevron-left"></i>
+         Previous Stage</button>
+         <button class="btn btn-print-color action m-r-5">
+          Print Application</button>
+               <button class="btn btn-save-next--color action ">Submit</button>
+             </div>
+             </div>
+            </div>
+         
+        </div>
+        </div>
+        </form>
+  </div>
+</div>
+</div>
+
+        </div>
+        <!-- /.container-fluid -->
+
+        <!-- Sticky Footer -->
+        <footer class="sticky-footer">
+          <div class="container my-auto">
+            <div class="copyright text-center my-auto">
+              <span>Copyright © MERP Application 2018</span>
+            </div>
+          </div>
+        </footer>
+
+      </div>
+      <!-- /.content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+            <a class="btn btn-primary" href="login.html">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/datatables.min.js"></script>
+    <script src="js/sb-admin.min.js"></script>
+    <script src="js/app.js"></script>
+
+
+
+  </body>
+
+</html>
